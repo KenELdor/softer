@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>тест задание решает 15 летний чел фронтенд джуниор девелопер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>информация о числах</h1>
+    <div class="form-group">
+      <label for="factType">выберите тип информации:</label>
+      <select id="factType">
+        <option value="math">Math</option>
+        <option value="trivia">Trivia</option>
+        <option value="date">Date</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="numberInput">введите число (или оставьте пустым для случайного):</label>
+      <input type="text" id="numberInput" placeholder="Введите число">
+    </div>
+
+    <button id="getFactBtn">получить информацию</button>
+    
+    <div id="result" class="hidden">
+      <h2>результат:</h2>
+      <p id="factText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
